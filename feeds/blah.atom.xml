@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gary's blog</title><link href="http://garylee.github.io/" rel="alternate"></link><link href="http://garylee.github.io/feeds/blah.atom.xml" rel="self"></link><id>http://garylee.github.io/</id><updated>2015-10-30T13:57:38+08:00</updated><entry><title>我在Github上的Blog開張了</title><link href="http://garylee.github.io/article-20151030135738.html" rel="alternate"></link><updated>2015-10-30T13:57:38+08:00</updated><author><name>Gary Lee</name></author><id>tag:garylee.github.io,2015-10-30:article-20151030135738.html</id><summary type="html">&lt;p&gt;開始嘗試使用Github的pages來做為個人的blog系統。
+目前先放新的文章，之後再慢慢的轉移舊的文章過來。&lt;/p&gt;</summary><category term="blah"></category></entry></feed>
