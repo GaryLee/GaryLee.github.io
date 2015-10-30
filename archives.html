@@ -1,77 +1,96 @@
-<!DOCTYPE html>
-<html lang="tw">
+<!doctype html>
+<html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Gary's blog</title>
-        <link rel="stylesheet" href="./theme/css/main.css" />
-        <link href="http://garylee.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gary's blog Atom Feed" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gary's blog, Gary's blah blah blah.">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <link rel="alternate"  href="http://garylee.github.io/feeds/all.atom.xml" type="application/atom+xml" title="Gary's blog Full Atom Feed"/>
+
+        <title>all posts // Gary's blog // Gary's blah blah blah.</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="./">Gary's blog </a></h1>
-                <nav><ul>
-                    <li><a href="./category/blah.html">blah</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-<h1>Archives for Gary's blog</h1>
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar pure-u">
+    <div class="cover-img" style="background-image: url('images/title.png')">
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+					<image class="owner-avatar" src="images/head.png">
+                    <h1 class="brand-main"><a href="/">Gary's blog</a></h1>
+                    <p class="tagline">Gary's blah blah blah.</p>
+                    <p class="social">
+                        <a href="http://github.com/GaryLee/">
+                            <i class="fa fa-github fa-3x"></i>
+                        </a>
+                        <a href="https://plus.google.com/+GaryLee/">
+                            <i class="fa fa-google-plus fa-3x"></i>
+                        </a>
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
+</div>    <div class="pure-u-1">
+        <div class="content">
+            <h1 class="content-subhead">All posts</h1>
+                <div class="archive-item">
+                    <a href="./author/gary-lee.html" title="See posts by Gary Lee">
+                    </a>
+                    <h5 class="archive-date">2015</h5>
+                    <h4 class="archive-date">30 十月</h4>
+                    <div class="archive-post"><a href="article-20151030135738.html">我在Github上的Blog開張了</a></div>
+                    <p class="archive-meta">Gary Lee in <a href="./category/blah.html">blah</a></p>
+                </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>&copy; Gary's blog &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>    <script>
+        var $top = $('.go-top');
 
-<dl>
-    <dt>週五 30 十月 2015</dt>
-    <dd><a href="./article-20151030135738.html">我在Github上的Blog開張了</a></dd>
-</dl>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://garylee.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
 
-                            <li><a href="http://github.com/GaryLee/">github</a></li>
-                            <li><a href="https://plus.google.com/+GaryLee/">google+</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-2953940-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = 'https://ssl.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
     </script>
-<script type="text/javascript">
-    var disqus_shortname = 'garyatgithub';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-2953940-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
 </body>
 </html>

@@ -19,6 +19,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Specify a customized theme, via path relative to the settings file
+THEME = "themes/pure"
+COVER_IMG_URL = "images/title.png"
+PROFILE_IMAGE_URL = "images/head.png"
+TAGLINE = "Gary's blah blah blah."
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -26,9 +32,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('github', 'http://github.com/GaryLee/'),
-          ('google+', 'https://plus.google.com/+GaryLee/'),)
+          ('google-plus', 'https://plus.google.com/+GaryLee/'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
