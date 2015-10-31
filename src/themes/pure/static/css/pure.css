@@ -35,8 +35,9 @@ pre {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 25%;
     margin-left: -25%;
+	padding-right: 4px;
+    width: 25%;
 }
 
 .cover-img {

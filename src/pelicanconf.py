@@ -21,9 +21,10 @@ AUTHOR_FEED_RSS = None
 
 # Specify a customized theme, via path relative to the settings file
 THEME = "themes/pure"
-COVER_IMG_URL = "images/title.png"
-PROFILE_IMAGE_URL = "images/head.png"
+COVER_IMG_URL = "/images/title.png"
+PROFILE_IMAGE_URL = "/images/head.png"
 TAGLINE = "Gary's blah blah blah."
+ARTICLE_BG_IMG_URL = "/images/article_side_bg.png"
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
