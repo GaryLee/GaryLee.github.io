@@ -1,0 +1,3 @@
+[submodule "src/themes/nest"]
+	path = src/themes/nest
+	url = https://github.com/molivier/nest.git
