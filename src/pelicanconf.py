@@ -9,7 +9,7 @@ PATH = 'content'
 
 TIMEZONE = 'Asia/Taipei'
 
-DEFAULT_LANG = 'zh-tw'
+DEFAULT_LANG = 'zh-TW'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -58,8 +58,8 @@ NEST_COPYRIGHT = u'&copy; blogname 2015'
 NEST_FOOTER_HTML = ''
 # index.html
 NEST_INDEX_HEAD_TITLE = u'Homepage'
-NEST_INDEX_HEADER_TITLE = u'My Awesome Blog'
-NEST_INDEX_HEADER_SUBTITLE = u'Smashing The Stack For Fun And Profit'
+NEST_INDEX_HEADER_TITLE = u"Gary's Blah Blah Blah..."
+NEST_INDEX_HEADER_SUBTITLE = u"Welcome to Gary's world."
 NEST_INDEX_CONTENT_TITLE = u'Last Posts'
 # archives.html
 NEST_ARCHIVES_HEAD_TITLE = u'Archives'
